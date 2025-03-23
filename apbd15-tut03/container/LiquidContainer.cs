@@ -8,6 +8,7 @@ public class LiquidContainer : Container, IHazardNotifier
     {
         IsHazardous = isHazardous;
     }
+    
 
     public void Notify(string message, string serialNumber)
     {

@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\s30428\\RiderProjects\\apbd15-tut03\\apbd15-tut03\\apbd15-tut03.csproj": {}
+    "C:\\Users\\Dimka\\RiderProjects\\apbd15-tut03\\apbd15-tut03\\apbd15-tut03.csproj": {}
   },
   "projects": {
-    "C:\\Users\\s30428\\RiderProjects\\apbd15-tut03\\apbd15-tut03\\apbd15-tut03.csproj": {
+    "C:\\Users\\Dimka\\RiderProjects\\apbd15-tut03\\apbd15-tut03\\apbd15-tut03.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\s30428\\RiderProjects\\apbd15-tut03\\apbd15-tut03\\apbd15-tut03.csproj",
+        "projectUniqueName": "C:\\Users\\Dimka\\RiderProjects\\apbd15-tut03\\apbd15-tut03\\apbd15-tut03.csproj",
         "projectName": "apbd15-tut03",
-        "projectPath": "C:\\Users\\s30428\\RiderProjects\\apbd15-tut03\\apbd15-tut03\\apbd15-tut03.csproj",
-        "packagesPath": "C:\\Users\\s30428\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\s30428\\RiderProjects\\apbd15-tut03\\apbd15-tut03\\obj\\",
+        "projectPath": "C:\\Users\\Dimka\\RiderProjects\\apbd15-tut03\\apbd15-tut03\\apbd15-tut03.csproj",
+        "packagesPath": "C:\\Users\\Dimka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dimka\\RiderProjects\\apbd15-tut03\\apbd15-tut03\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\s30428\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Dimka\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +36,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         }
       },
       "frameworks": {
@@ -55,12 +53,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Dimka\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
