@@ -8,6 +8,20 @@ public class RefrigeratedContainer : Container, IHazardNotifier
 
     private decimal _temperature;
     
+    public static readonly Dictionary<string, decimal> Products = new()
+    {
+        {"Frozen pizza", -30 },
+        {"Ice cream", -18 },
+        {"Meat", -15 },
+        {"Fish", 2 },
+        {"Sausages", 5 },
+        {"Cheese", (decimal)7.2 },
+        {"Bananas", (decimal)13.3 },
+        {"Chocolate", 18 },
+        {"Eggs", 19},
+        {"Butter", (decimal)20.5}
+    };
+    
     private static readonly Dictionary<string, decimal> products = new()
     {
         {"Frozen pizza", -30 },
@@ -38,9 +52,10 @@ public class RefrigeratedContainer : Container, IHazardNotifier
             {
                 Notify($"{temperature} you have set is lower than {requiredTemp} for a product type: {_productType}", "KON-C");
                 throw new InvalidOperationException($"temperature: {temperature} is lower than {requiredTemp}.");
+            }else if (temperature == requiredTemp)
+            {
+                _temperature = temperature;
             }
-            
-            _temperature = temperature;
         }
         else
         {
