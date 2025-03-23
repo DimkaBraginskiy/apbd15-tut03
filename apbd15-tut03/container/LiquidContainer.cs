@@ -11,10 +11,12 @@ public class LiquidContainer : Container, IHazardNotifier
 
     public override void LoadContainer(decimal mass)
     {
-        decimal hazardousMaxPayload = IsHazardous ? MaxPayload *= (decimal)0.5 : MaxPayload *= (decimal)0.9;
-        if (mass > hazardousMaxPayload)
+        decimal allowedPayload = IsHazardous ? MaxPayload * 0.5m : MaxPayload * 0.9m;
+        
+        if (mass > allowedPayload)
         {
-            throw new OverfillException($"mass: {mass} provided is greater than {hazardousMaxPayload}");
+            Notify($"Mass {mass} exceeds allowed payload: {allowedPayload} for hazardous caego.", SerialNumber);
+            throw new OverfillException($"mass: {mass} provided is greater than {allowedPayload}");
         }
 
         Mass = mass;

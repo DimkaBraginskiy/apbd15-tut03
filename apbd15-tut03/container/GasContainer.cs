@@ -11,7 +11,7 @@ public class GasContainer : Container, IHazardNotifier
 
     public override void EmptyCargo()
     {
-        Mass -= Mass * (decimal)0.95;//leaving 5% by subtracting 95%
+        Mass *= 0.5m;   
     }
     
     public override void LoadContainer(decimal mass)

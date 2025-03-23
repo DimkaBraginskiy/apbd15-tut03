@@ -38,10 +38,9 @@ public class RefrigeratedContainer : Container, IHazardNotifier
             {
                 Notify($"{temperature} you have set is lower than {requiredTemp} for a product type: {_productType}", "KON-C");
                 throw new InvalidOperationException($"temperature: {temperature} is lower than {requiredTemp}.");
-            }else if (temperature == requiredTemp)
-            {
-                _temperature = temperature;
             }
+            
+            _temperature = temperature;
         }
         else
         {

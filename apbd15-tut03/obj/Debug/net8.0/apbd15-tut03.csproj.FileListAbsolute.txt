@@ -1,0 +1,15 @@
+C:\Users\Dimka\RiderProjects\apbd15-tut03\apbd15-tut03\bin\Debug\net8.0\apbd15-tut03.exe
+C:\Users\Dimka\RiderProjects\apbd15-tut03\apbd15-tut03\bin\Debug\net8.0\apbd15-tut03.deps.json
+C:\Users\Dimka\RiderProjects\apbd15-tut03\apbd15-tut03\bin\Debug\net8.0\apbd15-tut03.runtimeconfig.json
+C:\Users\Dimka\RiderProjects\apbd15-tut03\apbd15-tut03\bin\Debug\net8.0\apbd15-tut03.dll
+C:\Users\Dimka\RiderProjects\apbd15-tut03\apbd15-tut03\bin\Debug\net8.0\apbd15-tut03.pdb
+C:\Users\Dimka\RiderProjects\apbd15-tut03\apbd15-tut03\obj\Debug\net8.0\apbd15-tut03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dimka\RiderProjects\apbd15-tut03\apbd15-tut03\obj\Debug\net8.0\apbd15-tut03.AssemblyInfoInputs.cache
+C:\Users\Dimka\RiderProjects\apbd15-tut03\apbd15-tut03\obj\Debug\net8.0\apbd15-tut03.AssemblyInfo.cs
+C:\Users\Dimka\RiderProjects\apbd15-tut03\apbd15-tut03\obj\Debug\net8.0\apbd15-tut03.csproj.CoreCompileInputs.cache
+C:\Users\Dimka\RiderProjects\apbd15-tut03\apbd15-tut03\obj\Debug\net8.0\apbd15-tut03.sourcelink.json
+C:\Users\Dimka\RiderProjects\apbd15-tut03\apbd15-tut03\obj\Debug\net8.0\apbd15-tut03.dll
+C:\Users\Dimka\RiderProjects\apbd15-tut03\apbd15-tut03\obj\Debug\net8.0\refint\apbd15-tut03.dll
+C:\Users\Dimka\RiderProjects\apbd15-tut03\apbd15-tut03\obj\Debug\net8.0\apbd15-tut03.pdb
+C:\Users\Dimka\RiderProjects\apbd15-tut03\apbd15-tut03\obj\Debug\net8.0\apbd15-tut03.genruntimeconfig.cache
+C:\Users\Dimka\RiderProjects\apbd15-tut03\apbd15-tut03\obj\Debug\net8.0\ref\apbd15-tut03.dll

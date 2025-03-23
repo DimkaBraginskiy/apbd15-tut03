@@ -62,7 +62,7 @@ public class Ship
             decimal containerWeightInTons = container.TotalMass / 1000;
             
             
-            RemoveContainer(container);
+            containers.Remove(container);
             Console.WriteLine($"{container} was removed from the ship");
         }
         else
