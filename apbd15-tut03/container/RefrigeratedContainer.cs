@@ -22,7 +22,7 @@ public class RefrigeratedContainer : Container, IHazardNotifier
         {"Butter", (decimal)20.5}
     };
 
-    public RefrigeratedContainer(decimal mass, decimal height, decimal tareWeight, decimal depth, string serialNumber, decimal maxPayload, string type, string productType, decimal temperature) : base(mass, height, tareWeight, depth, serialNumber, maxPayload, type)
+    public RefrigeratedContainer(decimal mass, decimal height, decimal tareWeight, decimal depth,  decimal maxPayload, string type, string productType, decimal temperature) : base(mass, height, tareWeight, depth, maxPayload, type)
     {
         _productType = productType;
         setTemperature(temperature);

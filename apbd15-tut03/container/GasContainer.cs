@@ -4,7 +4,7 @@ public class GasContainer : Container, IHazardNotifier
 {
     private decimal _pressure;
 
-    public GasContainer(decimal mass, decimal height, decimal tareWeight, decimal depth, string serialNumber, decimal maxPayload, string type, decimal pressure) : base(mass, height, tareWeight, depth, serialNumber, maxPayload, type)
+    public GasContainer(decimal mass, decimal height, decimal tareWeight, decimal depth, decimal maxPayload, string type, decimal pressure) : base(mass, height, tareWeight, depth, maxPayload, type)
     {
         _pressure = pressure;
     }
