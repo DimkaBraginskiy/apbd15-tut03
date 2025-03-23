@@ -105,7 +105,8 @@ public class Program
             Console.WriteLine("6. Print ships info");
             Console.WriteLine("7. Print containers info");
             Console.WriteLine("8. Show Product - Temperature table for Refrigerated Container.");
-            Console.WriteLine("9. Exit");
+            Console.WriteLine("9. Transfer container between 2 ships");
+            Console.WriteLine("10. Exit");
         }
     }
 
