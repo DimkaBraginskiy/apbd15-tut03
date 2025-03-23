@@ -8,26 +8,20 @@ public class LiquidContainer : Container, IHazardNotifier
     {
         IsHazardous = isHazardous;
     }
-    
-
-    public void Notify(string message, string serialNumber)
-    {
-        Console.WriteLine($"Hazardous container: {message} Serial number: {serialNumber}");
-    }
 
     public override void LoadContainer(decimal mass)
     {
-        if (IsHazardous)
+        decimal hazardousMaxPayload = IsHazardous ? MaxPayload *= (decimal)0.5 : MaxPayload *= (decimal)0.9;
+        if (mass > hazardousMaxPayload)
         {
-            MaxPayload *= (decimal)0.5;
+            throw new OverfillException($"mass: {mass} provided is greater than {hazardousMaxPayload}");
         }
-        else if(!IsHazardous)
-        {
-            MaxPayload *= (decimal)0.9;
-        }
-        else if(mass > MaxPayload)
-        {
-            Notify("Container Rules were violated", "KON-L");
-        }
+
+        Mass = mass;
+    }
+    
+    public void Notify(string message, string serialNumber)
+    {
+        Console.WriteLine($"Hazardous container: {message} Serial number: {serialNumber}");
     }
 }

@@ -13,17 +13,20 @@ public class GasContainer : Container, IHazardNotifier
     {
         Mass -= Mass * (decimal)0.95;//leaving 5% by subtracting 95%
     }
-
-    public void Notify(string message, string serialNumber)
-    {
-        Console.WriteLine($"Hazardous container: {message} Serial number: {serialNumber}");
-    }
-
+    
     public override void LoadContainer(decimal mass)
     {
         if (mass > MaxPayload)
         {
             Notify("Maximum Mass Payload has been exceeded.", "KON-G");
+            throw new OverfillException($"mass: {mass} provided is greater than {MaxPayload}");
         }
+
+        Mass = mass;
+    }
+    
+    public void Notify(string message, string serialNumber)
+    {
+        Console.WriteLine($"Hazardous container: {message} Serial number: {serialNumber}");
     }
 }

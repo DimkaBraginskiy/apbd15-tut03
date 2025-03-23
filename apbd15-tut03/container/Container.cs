@@ -13,12 +13,10 @@ public abstract class Container
         {
             if (value > MaxPayload)
             {
-                throw new OverfillException($"{value} provided is greater than {MaxPayload}");
+                throw new OverfillException($"value: {value} provided is greater than {MaxPayload}");
             }
-            else
-            {
-                _mass = value;
-            }
+            
+            _mass = value;
         }
     }
     public decimal Height { get; set; }
@@ -47,6 +45,11 @@ public abstract class Container
 
     public virtual void LoadContainer(decimal mass)
     {
+        if (mass > 0)
+        {
+            throw new OverflowException($"The container is already loaded.");
+        }
+
         Mass = mass;
     }
 }

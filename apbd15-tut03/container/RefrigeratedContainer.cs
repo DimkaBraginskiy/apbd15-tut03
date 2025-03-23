@@ -27,12 +27,7 @@ public class RefrigeratedContainer : Container, IHazardNotifier
         _productType = productType;
         setTemperature(temperature);
     }
-
-    public void Notify(string message, string serialNumber)
-    {
-        Console.WriteLine($"Hazardous container: {message} Serial number: {serialNumber}");
-    }
-
+    
     private void setTemperature(decimal temperature)
     {
         if (products.ContainsKey(_productType))
@@ -42,6 +37,7 @@ public class RefrigeratedContainer : Container, IHazardNotifier
             if (temperature < requiredTemp)
             {
                 Notify($"{temperature} you have set is lower than {requiredTemp} for a product type: {_productType}", "KON-C");
+                throw new InvalidOperationException($"temperature: {temperature} is lower than {requiredTemp}.");
             }else if (temperature == requiredTemp)
             {
                 _temperature = temperature;
@@ -50,6 +46,13 @@ public class RefrigeratedContainer : Container, IHazardNotifier
         else
         {
             Notify($"The product type: {_productType} is not supported.", "KON-C");
+            throw new InvalidOperationException("The product type is not supported.");
         }
     }
+    
+    public void Notify(string message, string serialNumber)
+    {
+        Console.WriteLine($"Hazardous container: {message} Serial number: {serialNumber}");
+    }
+
 }
